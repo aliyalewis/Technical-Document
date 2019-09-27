@@ -1,52 +1,142 @@
     <!DOCTYPE html>
     <style>
+
+        .body {
+            display: flex;
+            background-color: lightgray;
+        }
+
+        #navbar {
+            position: fixed;
+            display: grid;
+            border-right: solid;
+            border-bottom: solid;
+            width: 200px;
+            height: 100%;
+            margin-right: 0px;
+        }
+
+        .nav-link {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        #main-doc {
+            position: absolute;
+            flex-direction: column;
+            margin-left: 215px;
+        }
+
+        @media (max-height: 800px;) {
+            p {
+                font-size: 12px;
+            }
+        }
+
+        #textarea {
+            width: 100%;
+        }
+
     </style>
 
     <html>
-        <body>
+        <body class="body">
             <nav id="navbar">
-                <header>HTML/CSS for Beginners</header>
-                <a class="nav-link" href="#Introduction">Introduction</a>
-                <a class="nav-link" href="#HTML">HTML</a>
-                <a class="nav-link" href="#CSS">CSS</a>
-                <a class="nav-link" href="#Putting_Them_Together">Putting Them Together</a>
-                <a class="nav-link" href="#References">References</a>
+                <header><h1>HTML/CSS for Beginners</h1></header>
+                <h2><a class="nav-link" href="#Introduction">Introduction</a></h2>
+                <h2><a class="nav-link" href="#HTML">HTML</a></h2>
+                <h2><a class="nav-link" href="#CSS">CSS</a></h2>
+                <h2><a class="nav-link" href="#Putting_Them_Together">Putting Them Together</a></h2>
+                <h2><a class="nav-link" href="#References">References</a></h2>
             </nav>
             <main id="main-doc">
                 <section id="Introduction" class="main-section">
-                    <header>Introduction</header>
-                    <p></p>
-                    <li></li>
-                    <code></code>
-                    <p></p>
+                    <header><h1>Introduction</h1></header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam imperdiet sapien finibus ligula aliquet, vitae
+                    condimentum sem ornare. Mauris consectetur lacus elit, vitae mattis lorem lobortis ut. Praesent efficitur ullamcorper
+                    turpis, ac venenatis turpis viverra a. Duis dictum turpis velit, eu dignissim nibh lacinia nec. Ut vel justo ac ex
+                    aliquam tincidunt eget ut justo. Morbi at consequat orci. Aenean faucibus malesuada felis. Nunc urna libero, sagittis
+                    quis suscipit quis, lobortis quis felis. Donec rutrum risus at egestas pulvinar. Quisque non sodales eros, vitae
+                    sagittis sapien. Nunc interdum urna a purus ultrices dictum. Quisque at nisl ac ipsum ullamcorper eleifend at non ante.
+                    Nam sit amet turpis at mauris vestibulum porttitor convallis vulputate sapien.</p>
+                    <br>
+                    <p>Examples:</p>
+                    <li>Cras quis tristique neque. Nullam in dictum est, non egestas neque.</li>
+                    <p>HTML:</p>
+                    <textarea id="textarea" readonly><h2><a class="nav-link" href="#Introduction">Introduction</a></h2></textarea>
+                    <p>CSS:</p>
+                    <code>
+                        @media (max-height: 800px;) {
+                            p {
+                                font-size: 12px;
+                            }
+                        }
+                    </code>
+                    <p>Vestibulum lacus magna, tristique sed nisl eget, egestas tempus turpis. Vivamus nisi elit, consectetur in ullamcorper
+                    quis, dignissim eu ex.</p>
                 </section>
                 <section id="HTML" class="main-section">
-                    <header>HTML</header>
-                    <p></p>
-                    <li></li>
-                    <code></code>
-                    <p></p>
+                    <header><h1>HTML</h1></header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam imperdiet sapien finibus ligula aliquet, vitae
+                    condimentum sem ornare. Mauris consectetur lacus elit, vitae mattis lorem lobortis ut. Praesent efficitur ullamcorper
+                    turpis, ac venenatis turpis viverra a. Duis dictum turpis velit, eu dignissim nibh lacinia nec. Ut vel justo ac ex
+                    aliquam tincidunt eget ut justo. Morbi at consequat orci. Aenean faucibus malesuada felis. Nunc urna libero, sagittis
+                    quis suscipit quis, lobortis quis felis. Donec rutrum risus at egestas pulvinar. Quisque non sodales eros, vitae
+                    sagittis sapien. Nunc interdum urna a purus ultrices dictum. Quisque at nisl ac ipsum ullamcorper eleifend at non ante.
+                    Nam sit amet turpis at mauris vestibulum porttitor convallis vulputate sapien.</p>
+                    <li>Cras quis tristique neque. Nullam in dictum est, non egestas neque.</li>
+                    <br>
+                    <p>Example:</p>
+                    <textarea id="textarea" readonly><section id="HTML" class="main-section"></section></textarea>
+                    <p>Vestibulum lacus magna, tristique sed nisl eget, egestas tempus turpis. Vivamus nisi elit, consectetur in ullamcorper
+                    quis, dignissim eu ex.</p>
                 </section>
                 <section id="CSS" class="main-section">
-                    <header>CSS</header>
-                    <p></p>
-                    <li></li>
-                    <code></code>
-                    <p></p>
+                    <header><h1>CSS</h1></header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam imperdiet sapien finibus ligula aliquet, vitae
+                    condimentum sem ornare. Mauris consectetur lacus elit, vitae mattis lorem lobortis ut. Praesent efficitur ullamcorper
+                    turpis, ac venenatis turpis viverra a. Duis dictum turpis velit, eu dignissim nibh lacinia nec. Ut vel justo ac ex
+                    aliquam tincidunt eget ut justo. Morbi at consequat orci. Aenean faucibus malesuada felis. Nunc urna libero, sagittis
+                    quis suscipit quis, lobortis quis felis. Donec rutrum risus at egestas pulvinar. Quisque non sodales eros, vitae
+                    sagittis sapien. Nunc interdum urna a purus ultrices dictum. Quisque at nisl ac ipsum ullamcorper eleifend at non ante.
+                    Nam sit amet turpis at mauris vestibulum porttitor convallis vulputate sapien.</p>
+                    <li>Cras quis tristique neque. Nullam in dictum est, non egestas neque.</li>
+                    <br>
+                    <p>Example:</p>
+                    <code>
+                                            .body {
+                                            display: flex;
+                                            background-color: lightgray;
+                                            }
+                                        </code>
+                    <p>Vestibulum lacus magna, tristique sed nisl eget, egestas tempus turpis. Vivamus nisi elit, consectetur in ullamcorper
+                    quis, dignissim eu ex.</p>
                 </section>
                 <section id="Putting_Them_Together" class="main-section">
-                    <header>Putting Them Together</header>
-                    <p></p>
-                    <li></li>
-                    <code></code>
-                    <p></p>
+                    <header><h1>Putting Them Together</h1></header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam imperdiet sapien finibus ligula aliquet, vitae
+                    condimentum sem ornare. Mauris consectetur lacus elit, vitae mattis lorem lobortis ut. Praesent efficitur ullamcorper
+                    turpis, ac venenatis turpis viverra a. Duis dictum turpis velit, eu dignissim nibh lacinia nec. Ut vel justo ac ex
+                    aliquam tincidunt eget ut justo. Morbi at consequat orci. Aenean faucibus malesuada felis. Nunc urna libero, sagittis
+                    quis suscipit quis, lobortis quis felis. Donec rutrum risus at egestas pulvinar. Quisque non sodales eros, vitae
+                    sagittis sapien. Nunc interdum urna a purus ultrices dictum. Quisque at nisl ac ipsum ullamcorper eleifend at non ante.
+                    Nam sit amet turpis at mauris vestibulum porttitor convallis vulputate sapien.</p>
+                    <li>Cras quis tristique neque. Nullam in dictum est, non egestas neque.</li>
+                    <p>Vestibulum lacus magna, tristique sed nisl eget, egestas tempus turpis. Vivamus nisi elit, consectetur in ullamcorper
+                    quis, dignissim eu ex.</p>
                 </section>
                 <section id="References" class="main-section">
-                    <header>References</header>
-                    <p></p>
-                    <li></li>
-                    <code></code>
-                    <p></p>
+                    <header><h1>References</h1></header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam imperdiet sapien finibus ligula aliquet, vitae
+                    condimentum sem ornare. Mauris consectetur lacus elit, vitae mattis lorem lobortis ut. Praesent efficitur ullamcorper
+                    turpis, ac venenatis turpis viverra a. Duis dictum turpis velit, eu dignissim nibh lacinia nec. Ut vel justo ac ex
+                    aliquam tincidunt eget ut justo. Morbi at consequat orci. Aenean faucibus malesuada felis. Nunc urna libero, sagittis
+                    quis suscipit quis, lobortis quis felis. Donec rutrum risus at egestas pulvinar. Quisque non sodales eros, vitae
+                    sagittis sapien. Nunc interdum urna a purus ultrices dictum. Quisque at nisl ac ipsum ullamcorper eleifend at non ante.
+                    Nam sit amet turpis at mauris vestibulum porttitor convallis vulputate sapien.</p>
+                    <li>Cras quis tristique neque. Nullam in dictum est, non egestas neque.</li>
+                    <p>Vestibulum lacus magna, tristique sed nisl eget, egestas tempus turpis. Vivamus nisi elit, consectetur in ullamcorper
+                    quis, dignissim eu ex.</p>
                 </section>
             </main>
         </body>
